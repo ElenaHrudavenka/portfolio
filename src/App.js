@@ -7,7 +7,9 @@ import Skills from "./skills/Skills";
 function App() {
     return (
         <div className="App">
-
+            <Header/>
+            <Main/>
+            <Skills />
         </div>
     );
 }

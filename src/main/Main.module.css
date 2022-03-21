@@ -1,0 +1,15 @@
+.mainBlock {
+    height: 100vh;
+    background-color: #eab5a5;
+}
+
+.salutation {
+    width: 400px;
+    background-color: #c7b6b6;
+}
+
+.photo {
+    width: 300px;
+    height: 400px;
+    background-color: #c7b6b6;
+}
