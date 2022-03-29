@@ -1,5 +1,5 @@
 .mainBlock {
-    height: 100vh;
+    min-height: 100vh;
     background-color: #eab5a5;
 }
 
@@ -11,5 +11,5 @@
 .photo {
     width: 300px;
     height: 400px;
-    background-color: #c7b6b6;
+    background-color: #e5d1d1;
 }
