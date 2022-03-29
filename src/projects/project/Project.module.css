@@ -1,0 +1,30 @@
+.project {
+    background-color: #ecdf9e;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image {
+    background-color: #44449d;
+    height: 180px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /* background-image: url("");*/
+    background-size: cover;
+    background-position: center;
+}
+.description {
+    background-color: #ead58f;
+    text-align: center;
+}
+.button {
+    display: inline-block;
+    background: #8C959D;
+    color: #fff;
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    border-radius: 3px;
+}

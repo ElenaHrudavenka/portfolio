@@ -1,0 +1,33 @@
+.footerBox {
+    background-color: #d2c8da;
+}
+.title {
+    background-color: #bba1a1;
+}
+
+.footerContainer {
+    min-height: 150px;
+    background-color: #cabcd7;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.socialNetwork {
+    width: 280px;
+    background-color: #b597ce;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.span {
+    display: block;
+    background-color: #9c6fbd;
+}
+.button {
+    height: 40px;
+    width: 40px;
+    background: #6e7275;
+    color: #fff;
+    text-decoration: none;
+}
