@@ -5,10 +5,10 @@ import styleContainer from './../common/styles/Container.module.css'
 const Main = () => {
     return (
         <div className={style.mainBlock}>
-            <div className={styleContainer.container}>
+            <div className={style.mainContainer}>
                 <div className={style.salutation}>
-                    <span>Hi There</span>
-                    <h1>I am Alena Hrudavenka</h1>
+                    <h2>I'am</h2>
+                    <h1>Alena Hrudavenka</h1>
                     <p>Frontend Developer</p>
                 </div>
                 <div className={style.photo}></div>
