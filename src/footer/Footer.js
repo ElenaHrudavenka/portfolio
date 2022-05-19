@@ -1,12 +1,13 @@
 import React from 'react';
 import style from './Footer.module.css'
 import styleComponent from './../common/styles/Container.module.css'
+import Title from "../common/styles/components/title/Title";
 
 const Footer = () => {
     return (
         <div className={style.footerBox}>
             <div className={`${styleComponent.container} ${style.footerContainer}`}>
-                <h2 className={style.title}>Elena Hrudavenka</h2>
+                <Title titleH3={"Alena Hrudavenka"}/>
                 <div className={style.socialNetwork}>
                     <a href="" className={style.button}></a>
                     <a href="" className={style.button}></a>
