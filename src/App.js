@@ -8,7 +8,6 @@ import Freelance from "./freelance/Freelance";
 import Contacts from "./contact/Contacts";
 import Footer from "./footer/Footer";
 
-
 function App() {
     const skills = [
         {
@@ -43,7 +42,7 @@ function App() {
         },
     ]
     const projects = [
-        {id: v1(), image: "", projectTitle: "Todolist", description: "ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electr", link: ""},
+        {id: v1(), image: '', projectTitle: "Todolist", description: "ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electr", link: ""},
         {id: v1(), image: "", projectTitle: "Social Network", description: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less", link: ""},
     ]
     return (
