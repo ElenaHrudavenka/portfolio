@@ -1,23 +1,39 @@
 .freelanceBox {
-    background-color: #e1d0bd;
+    background-color: #000;
     min-height: 25vh;
+    padding: 100px 0;
 }
 .freelanceContainer {
-    height: 200px;
-    background-color: #e0c5a9;
+    height: 150px;
+    background-color: #191919;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-}
-
-.title {
-
+    border: 1px solid #888;
+    padding: 20px 0;
 }
 
 .button {
     padding: 0.5rem 1.5rem;
     border-radius: 3px;
-    background: #6e7275;
+    background: #F68338;
     color: #fff;
     text-decoration: none;
+    margin-top: unset;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+@media screen and (max-width: 558px) {
+    .freelanceContainer {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 293px) {
+    .freelanceContainer {
+       flex-wrap: nowrap;
+        height: 100%;
+    }
+    .button {
+        max-width: 100%;
+    }
 }
