@@ -1,14 +1,28 @@
 import React from 'react';
 import styleContainer from './../common/styles/Container.module.css'
 import style from './Projects.module.css'
-import Project from "./project/Project";
+import Project from './project/Project';
+import Title from '../common/styles/components/title/Title';
+import socialNetworkImage from './../assets/image/sotial.jpg'
+import todoImage from './../assets/image/todo.jpg'
 
 const Projects = (props) => {
-    const projectsList = props.projects.map(el => <Project key={el.id} projectTitle = {el.projectTitle} description={el.description} image={el.image} link={el.link}/>)
+    let url = ''
+    const projectsList = props.projects.map((el,index) => {
+        if (el.projectTitle === "Todolist") {
+            url = `url(${todoImage})`
+        } else if (el.projectTitle === "Social Network") {
+            url = `url(${socialNetworkImage})`
+        }
+        const projectStyle = {
+            backgroundImage: url
+        }
+        return <Project key={el.id} style={projectStyle} projectTitle = {el.projectTitle} description={el.description} image={el.image} link={el.link}/>
+    })
     return (
         <div className={style.projectsBlock}>
             <div className={`${styleContainer.container} ${style.projectsContainer}`}>
-                <h2 className={style.title}>My Projects</h2>
+                <Title titleH2={"My Projects"} titleH3={"Take A Look At"} />
                 <div className={style.projects}>
                     {projectsList}
                 </div>
