@@ -1,7 +1,7 @@
 import React from 'react';
-import style from './Footer.module.css'
-import styleComponent from './../common/styles/Container.module.css'
-import Title from "../common/styles/components/title/Title";
+import style from './Footer.module.scss'
+import styleComponent from '../common/styles/Container.module.scss'
+import Title from "../common/components/title/Title";
 
 const Footer = () => {
     return (
