@@ -1,0 +1,27 @@
+@import '../../common/styles/sass/variables';
+.skill {
+    width: 250px;
+    background-color: $bgColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid $secondaryColor;
+    color: $secondaryColor;
+    font-family: 'Rambla', sans-serif;
+    margin: 5px
+;
+}
+.skill h3 {
+    font-family: 'Oswald', sans-serif;
+    color: $textColor;
+    /*text-transform: uppercase;*/
+    letter-spacing: 3px;
+}
+.icon {
+    height: 60px;
+    width: 60px;
+    background-color: $primaryColor;
+}
+.description {
+    text-align: center;
+}
