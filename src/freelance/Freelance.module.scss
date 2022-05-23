@@ -1,0 +1,40 @@
+@import '../common/styles/sass/variables';
+
+.freelanceBox {
+  background-color: $bgSecondColor;
+  min-height: 25vh;
+  padding: 100px 0;
+
+  .freelanceContainer {
+    height: 150px;
+    background-color: $bgColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid $secondaryColor;
+    padding: 20px 0;
+    @media screen and (max-width: 558px) {
+      text-align: center;
+    }
+    @media screen and (max-width: 293px) {
+      flex-wrap: nowrap;
+      height: 100%;
+    }
+
+    .button {
+      padding: 0.5rem 1.5rem;
+      border-radius: 3px;
+      background: $primaryColor;
+      color: $textColor;
+      text-decoration: none;
+      margin-top: unset;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      @media screen and (max-width: 293px) {
+        max-width: 100%;
+      }
+    }
+  }
+
+}
+

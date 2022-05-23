@@ -1,7 +1,7 @@
 import React from 'react';
-import styleComponent from './../common/styles/Container.module.css'
-import style from './Freelance.module.css'
-import Title from "../common/styles/components/title/Title";
+import styleComponent from '../common/styles/Container.module.scss'
+import style from './Freelance.module.scss'
+import Title from "../common/components/title/Title";
 
 const Freelance = () => {
     return (

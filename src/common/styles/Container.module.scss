@@ -1,3 +1,4 @@
+@import '../styles/sass/variables';
 .container {
     border: 1px solid;
     height: 100%;
@@ -7,6 +8,6 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    background-color: #191919
+    background-color: $bgColor
 }
 

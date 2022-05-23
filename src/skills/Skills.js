@@ -1,8 +1,8 @@
 import React from 'react';
-import style from './Skills.module.css'
-import styleContainer from  './../common/styles/Container.module.css'
+import style from './Skills.module.scss'
+import styleContainer from '../common/styles/Container.module.scss'
 import Skill from "./skill/Skill";
-import Title from "../common/styles/components/title/Title";
+import Title from "../common/components/title/Title";
 
 const Skills = (props) => {
     const listSkills = props.skills.map(el => {
