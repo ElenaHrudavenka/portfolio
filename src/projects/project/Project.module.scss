@@ -3,6 +3,7 @@
 .project {
   color: $textColor;
   background-color: $bgColor;
+  border: 1px solid $secondaryColor;
   width: 400px;
   display: flex;
   flex-direction: column;
@@ -11,11 +12,10 @@
   .image {
     position: relative;
     height: 200px;
-    width: 350px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-image: url("");*/
     background-size: cover;
     background-position: center;
     @media screen and (max-width: 453px) {
@@ -55,7 +55,6 @@
     }
   }
   .description {
-    background-color: $bgColor;
     color: $secondaryColor;
     text-align: center;
     font-family: 'Rambla', sans-serif;

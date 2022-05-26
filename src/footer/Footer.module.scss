@@ -1,15 +1,13 @@
 .footerBox {
   background-color: #000;
   font-family: 'Oswald', sans-serif;
-  padding: 100px 0 20px;
+  padding-bottom: 10px;
 
   .footerContainer {
-    border: 1px solid #888;
-    min-height: 150px;
-    background-color: #191919;
+    min-height: 120px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     @media screen and (max-width: 229px) {
       text-align: center;
     }
