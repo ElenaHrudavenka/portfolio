@@ -1,15 +1,16 @@
 @import '../common/styles/sass/variables';
 
 .projectsBlock {
-  min-height: 100vh;
+/*  min-height: 100vh;*/
   background-color: $bgSecondColor;
+  padding-bottom: 30px;
 
   .projectsContainer {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    background-color: $bgColor;
-    border: 1px solid $secondaryColor;
+/*    background-color: $bgColor;
+    border: 1px solid $secondaryColor;*/
 
     .projects {
       /*border: 1px solid;*/

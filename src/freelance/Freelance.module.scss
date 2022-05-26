@@ -3,15 +3,14 @@
 .freelanceBox {
   background-color: $bgSecondColor;
   min-height: 25vh;
-  padding: 100px 0;
+  padding-bottom: 30px;
 
   .freelanceContainer {
-    height: 150px;
-    background-color: $bgColor;
+    height: 120px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    border: 1px solid $secondaryColor;
+/*    border: 1px solid $secondaryColor;*/
     padding: 20px 0;
     @media screen and (max-width: 558px) {
       text-align: center;
