@@ -1,17 +1,27 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.8dfac304.css",
-    "main.js": "/portfolio/static/js/main.80e98a3e.js",
-    "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/sotial.jpg": "/portfolio/static/media/sotial.eb4525b36a86d6988156.jpg",
-    "static/media/todo.jpg": "/portfolio/static/media/todo.a1eba9d8c0678c4802f5.jpg",
+    "main.css": "/portfolio/static/css/main.9a7a47f0.css",
+    "main.js": "/portfolio/static/js/main.3beba713.js",
+    "static/media/education.jpg": "/portfolio/static/media/education.a4ab342680bca84b825f.jpg",
+    "static/media/todo.jpg": "/portfolio/static/media/todo.e58fa243e4ee7053b99f.jpg",
+    "static/media/portfolioPhoto.jpg": "/portfolio/static/media/portfolioPhoto.2b3153d3e881ee3fd7f3.jpg",
+    "static/media/codewars_logo.svg": "/portfolio/static/media/codewars_logo.29b2504cf8216a34d469d1798f64de02.svg",
+    "static/media/react_logo.svg": "/portfolio/static/media/react_logo.7b98cd0ff882612329323651de935991.svg",
+    "static/media/redux_logo.svg": "/portfolio/static/media/redux_logo.aef47b33917841f3dc8a87c8c7cfab9c.svg",
+    "static/media/js_logo.svg": "/portfolio/static/media/js_logo.b18c3b62c1f8e2e7179cf0a1f906512b.svg",
+    "static/media/linkedin_logo.svg": "/portfolio/static/media/linkedin_logo.5fe388aa179c78982a31bf272b28368f.svg",
+    "static/media/css_logo.svg": "/portfolio/static/media/css_logo.2387e2f5e8f022b6a8cbcc2a77ba1ce2.svg",
+    "static/media/vk_logo.svg": "/portfolio/static/media/vk_logo.2aea788517245db73357a0cbf5c1be2e.svg",
+    "static/media/ts_logo.svg": "/portfolio/static/media/ts_logo.5978c0feb4ca6b58e92cce788e809737.svg",
+    "static/media/github_logo.svg": "/portfolio/static/media/github_logo.3e80bcebaca36d96314f091ccaf5ee64.svg",
     "index.html": "/portfolio/index.html",
-    "main.8dfac304.css.map": "/portfolio/static/css/main.8dfac304.css.map",
-    "main.80e98a3e.js.map": "/portfolio/static/js/main.80e98a3e.js.map",
-    "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
+    "static/media/html_logo.svg": "/portfolio/static/media/html_logo.be01e3ff626e2df80a87d6b30fa56909.svg",
+    "static/media/telegram_logo.svg": "/portfolio/static/media/telegram_logo.a31e429df68190475e33d13f04f73477.svg",
+    "main.9a7a47f0.css.map": "/portfolio/static/css/main.9a7a47f0.css.map",
+    "main.3beba713.js.map": "/portfolio/static/js/main.3beba713.js.map"
   },
   "entrypoints": [
-    "static/css/main.8dfac304.css",
-    "static/js/main.80e98a3e.js"
+    "static/css/main.9a7a47f0.css",
+    "static/js/main.3beba713.js"
   ]
 }
