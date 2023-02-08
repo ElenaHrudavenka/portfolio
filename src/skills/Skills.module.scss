@@ -1,10 +1,13 @@
 @import '../common/styles/sass/variables.scss';
 
 .skillsBlock {
-/*  min-height: 100vh;*/
+  min-height: 90vh;
+  padding-top: $headerHeight;
   background-color: $bgSecondColor;
-/*  padding: 100px 0;*/
   padding-bottom: 30px;
+  @media screen and (max-width: 1569px) {
+    margin-top: -2px;
+  }
 }
 
 .skillsContainer {

@@ -1,12 +1,19 @@
 @import './variables';
-@mixin text ($fontFamily, $fontSize) {
+@mixin text($fontFamily, $fontSize) {
 font-family: $fontFamily;
   font-size: $fontSize;
-
 }
-@mixin primaryText () {
-
+@mixin flex($flex-direction, $align-items, $justify-content, $flex-wrap) {
+  display: flex;
+  flex-direction: $flex-direction;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  flex-wrap: $flex-wrap;
 }
-@mixin secondaryText () {
+@mixin container() {
+  width: 80%;
+  margin: 0 auto;
+}
+@mixin bgSettings() {
 
 }

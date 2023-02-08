@@ -1,0 +1,123 @@
+@import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
+.mainBlock {
+    min-height: 90vh;
+    padding-top: $headerHeight;
+    background-color: $bgSecondColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+/*    .particles {
+        position: absolute;
+        top:0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }*/
+    .mainContainer {
+        @include container();
+        @include flex(flex, center, space-evenly, wrap);
+        @media screen and (max-width: 915px) {
+            justify-content: center;
+        }
+        .salutation {
+            padding-left: 20px;
+            width: 400px;
+            font-family: 'Oswald', sans-serif;
+            @media screen and (max-width: 915px) {
+                width: 250px;
+                padding-left: 2px;
+                text-align: center;
+            }
+            & h1 {
+                color: white;
+                margin-bottom: 20px;
+                font-weight: 500;
+                font-size: 35px;
+                letter-spacing: 4px;
+                text-transform: uppercase;
+                line-height: 1.5em;
+                margin-top: unset;
+            }
+
+            & h2 {
+                font-size: 15px;
+                text-transform: uppercase;
+                color: #F68338;
+                font-weight: 400;
+                letter-spacing: 5px;
+                margin-bottom: unset;
+            }
+
+            & p {
+                display: flex;
+                font-size: 22px;
+                text-transform: uppercase;
+                color: #F68338;
+                font-weight: 400;
+                letter-spacing: 5px;
+                margin-bottom: unset;
+                position: relative;
+                @media screen and (max-width: 915px) {
+                    font-size: 16px;
+                }
+                &::after {
+                    content: "";
+                    position: absolute;
+                    height: 1px;
+                    width: 70%;
+                    background: #F68338;
+                    bottom: 0;
+                    @media screen and (max-width: 915px) {
+                        height: 0;
+                        font-size: 17px;
+                    }
+                }
+            }
+        }
+        .photo {
+            position: relative;
+            z-index: 1;
+            @media screen and (max-width: 1143px){
+                margin-top: 50px;
+            }
+            .image {
+                width: 340px;
+                height: 480px;
+                background-size: cover;
+                background-image: url('./../assets/image/portfolioPhoto.jpg');
+                background-position: 80% 0;
+                @media screen and (max-width: 600px){
+                    width: 240px;
+                    height: 350px;
+                    transition: 0.5s;
+                }
+                &::before {
+                    content: '';
+                    position: absolute;
+                    height: 110%;
+                    width: 105%;
+                    border: 5px solid #F68338;
+                    left: 15px;
+                    top: -15px;
+                    z-index: -1;
+                    @media screen and (max-width: 760px){
+                        border: 5px solid #F68338;
+                        height: 99%;
+                        width: 99%;
+                        left: -2px;
+                        top: -2px;
+                    }
+                }
+/*                &:hover {
+                    transform: scale(1.2, 1.2);
+                    transition: 0.5s;
+                }
+                &:hover::before {
+
+                    transition: 0.5s;
+                }*/
+            }
+        }
+    }
+}
