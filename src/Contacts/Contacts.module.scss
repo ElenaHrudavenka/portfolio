@@ -1,0 +1,79 @@
+@import '../common/styles/sass/variables';
+@import '../common/components/Button/Button.module';
+.contactsBlock {
+  min-height: 70vh;
+  padding-top: $headerHeight;
+  background-color: $bgSecondColor;
+  padding-bottom: 30px;
+  display: flex;
+  align-items: center;
+  @media screen and (max-width: 1569px) {
+    margin-top: -2px;
+  }
+
+  .contactsContainer {
+    @include flex(column, center, space-around, nowrap);
+    min-height: 40vh;
+    padding: 20px 0;
+    @media screen and (max-width: 350px) {
+      width: 100%;
+      /*text-align: center;*/
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 350px;
+      min-height: 150px;
+      @media screen and (max-width: 350px) {
+        width: 100%;
+      }
+      input,
+      textarea {
+        background: $bgColor;
+        opacity: 0.9;
+        color: white;
+        padding-left: 7px;
+      }
+      input {
+        height: 25px;
+      }
+      input:-webkit-autofill,
+      input:-webkit-autofill:hover,
+      input:-webkit-autofill:focus,
+      input:-webkit-autofill:active {
+        color: white;
+        box-shadow: inset 100em 1em $bgColor;
+      }
+      textarea {
+        height: 70px;
+      }
+      textarea:-webkit-autofill,
+      textarea:-webkit-autofill:hover,
+      textarea:-webkit-autofill:focus,
+      textarea:-webkit-autofill:active {
+        color: white;
+        box-shadow: inset 100em 1em $bgColor;
+      }
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 0.5rem 1.5rem;
+      border-radius: 3px;
+      background: $primaryColor;
+      color: $textColor;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    button/*[type='submit']*/ {
+      @extend .btn;
+      align-self: center;
+    }
+  }
+
+}
+
+

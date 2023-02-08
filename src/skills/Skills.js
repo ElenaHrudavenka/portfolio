@@ -1,8 +1,8 @@
 import React from 'react';
 import style from './Skills.module.scss'
 import styleContainer from '../common/styles/Container.module.scss'
-import Skill from "./skill/Skill";
-import Title from "../common/components/title/Title";
+import Skill from "./Skill/Skill";
+import Title from "../common/components/Title/Title";
 
 const Skills = (props) => {
     const listSkills = props.skills.map(el => {
@@ -11,7 +11,7 @@ const Skills = (props) => {
         )
     })
     return (
-        <div className={style.skillsBlock}>
+        <div id='skills' className={style.skillsBlock}>
             <div className={`${styleContainer.container} ${style.skillsContainer}`}>
                 <Title titleH2={"My Services"} />
                 <div className={style.skills}>

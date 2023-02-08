@@ -1,0 +1,61 @@
+@import './../common/styles/sass/variables';
+.footerBox {
+  min-height: 20vh;
+  background-color: #000;
+  font-family: 'Oswald', sans-serif;
+  padding-bottom: 10px;
+  @media screen and (max-width: 1569px) {
+    margin-top: -2px;
+  }
+
+  .footerContainer {
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    @media screen and (max-width: 229px) {
+      text-align: center;
+    }
+
+    .socialIcons {
+      width: 330px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      @media screen and (max-width: 376px) {
+        width: 100%;
+      }
+      @media screen and (max-width: 229px) {
+        height: 100px;
+        flex-wrap: wrap;
+      }
+
+      .socialIcon {
+        height: 40px;
+        width: 40px;
+        color: #fff;
+        text-decoration: none;
+        border: 3px solid $bgSecondColor;
+        border-radius: 50%;
+        &:hover {
+          border: 3px solid #F68338;
+        }
+        img {
+          width: 100%;
+        }
+        @media screen and (max-width: 500px) {
+          width: 30px;
+        }
+      }
+    }
+
+    .span {
+      display: block;
+      color: #fff;
+      font-size: 18px;
+      letter-spacing: 2px;
+    }
+  }
+}
+

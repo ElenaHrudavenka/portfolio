@@ -1,0 +1,36 @@
+@import './../../styles/sass/mixins';
+.btn {
+  border: none;
+  @include flex(row, center, center, nowrap);
+  /* @include text()*/
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 8px 20px;
+  max-width: 160px;
+  width: 100%;
+  color: white;
+  outline: none;
+  position: relative;
+  margin-top: 15px;
+  z-index: 0;
+  /* оранжевая полоса и ее настройки */
+  &::after {
+    content: '';
+    position: absolute;
+    width: 70%;
+    height: 10px;
+    background: #F68338;
+    bottom: 0;
+    z-index: -1;
+    transition: all 0.2s ease-in-out;
+  }
+  &:hover {
+    text-decoration: none;
+    color: white;
+    &::after {
+      width: 100%;
+      height: 110%;
+      transition: all 0.3s ease-in-out 0s;
+    }
+  }
+}
