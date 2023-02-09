@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.9a7a47f0.css",
-    "main.js": "/portfolio/static/js/main.3beba713.js",
+    "main.css": "/portfolio/static/css/main.0a723d9b.css",
+    "main.js": "/portfolio/static/js/main.092844f9.js",
     "static/media/education.jpg": "/portfolio/static/media/education.a4ab342680bca84b825f.jpg",
     "static/media/todo.jpg": "/portfolio/static/media/todo.e58fa243e4ee7053b99f.jpg",
     "static/media/portfolioPhoto.jpg": "/portfolio/static/media/portfolioPhoto.2b3153d3e881ee3fd7f3.jpg",
@@ -14,14 +14,14 @@
     "static/media/vk_logo.svg": "/portfolio/static/media/vk_logo.2aea788517245db73357a0cbf5c1be2e.svg",
     "static/media/ts_logo.svg": "/portfolio/static/media/ts_logo.5978c0feb4ca6b58e92cce788e809737.svg",
     "static/media/github_logo.svg": "/portfolio/static/media/github_logo.3e80bcebaca36d96314f091ccaf5ee64.svg",
-    "index.html": "/portfolio/index.html",
     "static/media/html_logo.svg": "/portfolio/static/media/html_logo.be01e3ff626e2df80a87d6b30fa56909.svg",
     "static/media/telegram_logo.svg": "/portfolio/static/media/telegram_logo.a31e429df68190475e33d13f04f73477.svg",
-    "main.9a7a47f0.css.map": "/portfolio/static/css/main.9a7a47f0.css.map",
-    "main.3beba713.js.map": "/portfolio/static/js/main.3beba713.js.map"
+    "index.html": "/portfolio/index.html",
+    "main.0a723d9b.css.map": "/portfolio/static/css/main.0a723d9b.css.map",
+    "main.092844f9.js.map": "/portfolio/static/js/main.092844f9.js.map"
   },
   "entrypoints": [
-    "static/css/main.9a7a47f0.css",
-    "static/js/main.3beba713.js"
+    "static/css/main.0a723d9b.css",
+    "static/js/main.092844f9.js"
   ]
 }
