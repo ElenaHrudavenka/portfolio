@@ -1,19 +1,19 @@
 @import '../common/styles/sass/variables';
+@import '../common/styles/sass/mixins';
 .nav {
-    width: 350px;
-    display: flex;
-    justify-content: space-around;
-    text-transform: uppercase;
-    padding: 3px;
-    & a {
-        text-decoration: none;
-        color: $textColor;
-        letter-spacing: 1.5px;
-        &:hover {
-            color: #f68338;
-        }
+  width: 350px;
+  @include flex(row, center, space-around, nowrap);
+  text-transform: uppercase;
+  padding: 3px;
+  & a {
+    text-decoration: none;
+    color: $textColor;
+    letter-spacing: 1.5px;
+    &:hover {
+      color: $primaryColor;
     }
-    .active {
-        text-decoration: underline #f68338;
-    }
+  }
+  .active {
+    text-decoration: underline $primaryColor;
+  }
 }

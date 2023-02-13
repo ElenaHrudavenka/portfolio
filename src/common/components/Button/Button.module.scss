@@ -1,8 +1,9 @@
 @import './../../styles/sass/mixins';
+@import './../../styles/sass/variables';
 .btn {
   border: none;
   @include flex(row, center, center, nowrap);
-  /* @include text()*/
+  @include text($fontFamily, 1.1em);
   text-transform: uppercase;
   letter-spacing: 1px;
   padding: 8px 20px;
@@ -19,7 +20,7 @@
     position: absolute;
     width: 70%;
     height: 10px;
-    background: #F68338;
+    background: $primaryColor;
     bottom: 0;
     z-index: -1;
     transition: all 0.2s ease-in-out;

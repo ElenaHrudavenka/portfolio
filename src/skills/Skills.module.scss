@@ -1,13 +1,10 @@
 @import '../common/styles/sass/variables.scss';
 
 .skillsBlock {
-  min-height: 90vh;
+  min-height: 100vh;
   padding-top: $headerHeight;
   background-color: $bgSecondColor;
   padding-bottom: 30px;
-  @media screen and (max-width: 1569px) {
-    margin-top: -2px;
-  }
   .skillsContainer {
     /* border: 1px solid $secondaryColor;*/
     align-items: center;
@@ -34,5 +31,3 @@
     }
   }
 }
-
-
