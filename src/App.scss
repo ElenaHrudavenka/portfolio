@@ -1,0 +1,15 @@
+@import './common/styles/sass/mixins';
+.App {
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+
+  .App-header {
+    /*  background-color: #000;*/
+    @include flex(column, center, center, nowrap);
+    min-height: 100vh;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+}

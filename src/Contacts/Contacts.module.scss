@@ -1,31 +1,24 @@
 @import '../common/styles/sass/variables';
 @import '../common/components/Button/Button.module';
 .contactsBlock {
+  @include flex(column, center, space-around, wrap);
   min-height: 70vh;
   padding-top: $headerHeight;
   background-color: $bgSecondColor;
   padding-bottom: 30px;
-  display: flex;
-  align-items: center;
-  @media screen and (max-width: 1569px) {
-    margin-top: -2px;
-  }
-
   .contactsContainer {
     @include flex(column, center, space-around, nowrap);
     min-height: 40vh;
     padding: 20px 0;
     @media screen and (max-width: 350px) {
       width: 100%;
-      /*text-align: center;*/
     }
-
     .form {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       width: 350px;
-      min-height: 150px;
+      min-height: 200px;
       @media screen and (max-width: 350px) {
         width: 100%;
       }
@@ -43,7 +36,7 @@
       input:-webkit-autofill:hover,
       input:-webkit-autofill:focus,
       input:-webkit-autofill:active {
-        color: white;
+        -webkit-text-fill-color: $textColor;
         box-shadow: inset 100em 1em $bgColor;
       }
       textarea {
@@ -56,24 +49,39 @@
         color: white;
         box-shadow: inset 100em 1em $bgColor;
       }
-    }
-
-    button {
-      margin-top: 30px;
-      padding: 0.5rem 1.5rem;
-      border-radius: 3px;
-      background: $primaryColor;
-      color: $textColor;
-      text-decoration: none;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-    button/*[type='submit']*/ {
-      @extend .btn;
-      align-self: center;
+      input[type='submit'] {
+        margin: 0 auto;
+        background: none;
+        border: none;
+        width: 50%;
+        height: 35px;
+        color: $textColor;
+        padding: 4px;
+        border-radius: 3px;
+        text-decoration: underline;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        z-index: 1;
+        @include text($fontFamily, 1.1em);
+        &:hover {
+          text-decoration: none;
+          background: $primaryColor;
+        }
+      }
     }
   }
 
 }
-
-
+.popup {
+  @include text($fontFamily, 1.2em);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 300px;
+  height: 50px;
+  border: 1px solid $primaryColor;
+  background-color: $bgColor;
+  color: $textColor;
+  opacity: 0.9;
+}

@@ -1,14 +1,10 @@
 @import '../common/styles/sass/variables';
 
 .projectsBlock {
-  min-height: 90vh;
+  min-height: 100vh;
   padding-top: $headerHeight;
   background-color: $bgSecondColor;
   padding-bottom: 30px;
-  @media screen and (max-width: 1569px) {
-    margin-top: -2px;
-  }
-
   .projectsContainer {
     flex-direction: column;
     align-items: center;
@@ -22,4 +18,3 @@
     }
   }
 }
-

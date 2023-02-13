@@ -1,12 +1,9 @@
 @import './../common/styles/sass/variables';
 .footerBox {
-  min-height: 20vh;
-  background-color: #000;
+  min-height: 30vh;
+  background-color: $bgSecondColor;
   font-family: 'Oswald', sans-serif;
   padding-bottom: 10px;
-  @media screen and (max-width: 1569px) {
-    margin-top: -2px;
-  }
 
   .footerContainer {
     min-height: 120px;
@@ -34,28 +31,28 @@
       .socialIcon {
         height: 40px;
         width: 40px;
-        color: #fff;
+        color: $textColor;
         text-decoration: none;
         border: 3px solid $bgSecondColor;
         border-radius: 50%;
         &:hover {
-          border: 3px solid #F68338;
+          border: 3px solid $primaryColor;
         }
         img {
           width: 100%;
         }
         @media screen and (max-width: 500px) {
           width: 30px;
+          height: 30px;
         }
       }
     }
 
     .span {
       display: block;
-      color: #fff;
+      color: $textColor;
       font-size: 18px;
       letter-spacing: 2px;
     }
   }
 }
-

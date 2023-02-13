@@ -1,6 +1,6 @@
 @import './variables';
 @mixin text($fontFamily, $fontSize) {
-font-family: $fontFamily;
+  font-family: $fontFamily;
   font-size: $fontSize;
 }
 @mixin flex($flex-direction, $align-items, $justify-content, $flex-wrap) {
@@ -15,5 +15,4 @@ font-family: $fontFamily;
   margin: 0 auto;
 }
 @mixin bgSettings() {
-
 }
