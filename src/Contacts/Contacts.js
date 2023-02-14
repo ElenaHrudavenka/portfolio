@@ -8,19 +8,6 @@ import {ApiSend} from "../api/api";
 import Popup from "reactjs-popup";
 
 const Contacts = () => {
-    /*const form = useRef()*/
-    /*    const [fromName, setFromName] = useState('');
-        const [fromEmail, setFromEmail] = useState('');
-        const [message, setMessage] = useState('');
-        const onChangeFromName = (e) => {
-            setFromName(e.currentTarget.value);
-        }
-        const onChangeFromEmail = (e) => {
-            setFromEmail(e.currentTarget.value);
-        }
-        const onChangeMessage = (e) => {
-            setMessage(e.currentTarget.value);
-        }*/
     const [state, dispatch] = useReducer(reducer, initialState, init);
     const {fromName, fromEmail, message, errorMessage, successfulSending, isModalActive} = state
     const onChangeFromName = (e) => {
@@ -39,8 +26,9 @@ const Contacts = () => {
         dispatch({type: 'SUCCESSFUL-SENDING', successfulSending: true})
     }
     const closeModal = () => {
-        /*dispatch({type: 'SET-MODAL-ACTIVE', isModalActive: false})*/
         dispatch({type: 'SUCCESSFUL-SENDING', isModalActive: false})
+        dispatch({type: 'RESET-FORM', payload: initialState});
+
     }
     return (
         <div id='contacts' className={style.contactsBlock}>

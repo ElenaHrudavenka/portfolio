@@ -13,7 +13,7 @@ export const ApiSend = {
             "D2y0R2CLIvB7jnSlv",
         ).then((response)=>{
             if (response.status >= 200 && response.status <= 399) {
-                dispatch({type: 'SUCCESSFUL-SENDING', successfulSending: true })
+                dispatch({type: 'SUCCESSFUL-SENDING', successfulSending: true });
             }
         }).catch((error)=>{
             // client received an error response (5xx, 4xx)
