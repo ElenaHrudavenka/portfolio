@@ -24,8 +24,6 @@ const Contacts = () => {
     const [state, dispatch] = useReducer(reducer, initialState, init);
     const {fromName, fromEmail, message, errorMessage, successfulSending, isModalActive} = state
     const onChangeFromName = (e) => {
-        /*alert(e.currentTarget.value)*/
-        /*alert(state.fromName)*/
         dispatch({type: 'CHANGE-FORM-NAME', fromName: e.currentTarget.value});
     }
     const onChangeFromEmail = (e) => {
@@ -54,7 +52,7 @@ const Contacts = () => {
                                placeholder='Name'
                                name='fromName'
                                onChange={onChangeFromName}
-                               pattern={'^[A-Za-z0-9]{2,50}$'}
+                               pattern={'^[A-Za-zА-яа-я0-9]{2,50}$'}
                                title={'The name field must not be empty and must contain from 2 to 50 characters.'}
                                required
                         />
