@@ -13,12 +13,10 @@ export const ApiSend = {
             "D2y0R2CLIvB7jnSlv",
         ).then((response)=>{
             if (response.status >= 200 && response.status <= 399) {
-                alert('The email was successfully sent!')
                 dispatch({type: 'SUCCESSFUL-SENDING', successfulSending: true })
-            } else (alert('some'))
+            }
         }).catch((error)=>{
             // client received an error response (5xx, 4xx)
-            debugger
             if (error.response) {dispatch({type: 'ERROR', errorMessage: error.message})}
             // client never received a response, or request never left
             if (error.request) {dispatch({type: 'ERROR', errorMessage: "Network error!"})}
