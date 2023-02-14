@@ -37,8 +37,7 @@ const Contacts = () => {
     const sendEmail = (e) => {
         e.preventDefault();
         const formData = {fromName, fromEmail, message};
-        console.dir(formData)
-        /*ApiSend.sendMessage(formData, dispatch);*/
+        ApiSend.sendMessage(formData, dispatch);
         dispatch({type: 'SUCCESSFUL-SENDING', successfulSending: true})
     }
     const closeModal = () => {
