@@ -24,6 +24,8 @@ export const reducer = (state, action) => {
             return {...state, message: action.message}
         case 'SET-MODAL-ACTIVE':
             return {...state, isModalActive: action.isModalActive}
+        case 'RESET-FORM':
+            return init(action.payload)
         default:
             return state;
     }
