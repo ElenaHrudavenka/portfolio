@@ -1,68 +1,60 @@
-import React, {useReducer} from 'react';
+import React from 'react';
 import style from './Contacts.module.scss';
 import styleComponent from '../common/styles/Container.module.scss';
 import Title from '../common/components/Title/Title';
 import Fade from 'react-reveal/Fade';
-import {init, initialState, reducer} from "../api/reducer";
-import {ApiSend} from "../api/api";
-import Popup from "reactjs-popup";
+import Popup from 'reactjs-popup';
 
-const Contacts = () => {
-    const [state, dispatch] = useReducer(reducer, initialState, init);
-    const {fromName, fromEmail, message, errorMessage, successfulSending, isModalActive} = state
-    const onChangeFromName = (e) => {
-        dispatch({type: 'CHANGE-FORM-NAME', fromName: e.currentTarget.value});
-    }
-    const onChangeFromEmail = (e) => {
-        dispatch({type: 'CHANGE-FORM-EMAIL', fromEmail: e.currentTarget.value});
-    }
-    const onChangeMessage = (e) => {
-        dispatch({type: 'CHANGE-MESSAGE', message: e.currentTarget.value});
-    }
-    const sendEmail = (e) => {
-        e.preventDefault();
-        const formData = {fromName, fromEmail, message};
-        ApiSend.sendMessage(formData, dispatch);
-        dispatch({type: 'SUCCESSFUL-SENDING', successfulSending: true})
-    }
-    const closeModal = () => {
-        dispatch({type: 'SUCCESSFUL-SENDING', isModalActive: false})
-        dispatch({type: 'RESET-FORM', payload: initialState});
-
-    }
-    return (
-        <div id='contacts' className={style.contactsBlock}>
-            <div className={`${styleComponent.container} ${style.contactsContainer}`}>
-                <Fade>
-                    <Title titleH2={'GET IN TOUCH'}/>
-                    <form className={style.form} name='contacts' onSubmit={sendEmail}>
-                        <input type='text'
-                               placeholder='Name'
-                               name='fromName'
-                               onChange={onChangeFromName}
-                               pattern={'^[A-Za-zА-яа-я0-9]{2,50}$'}
-                               title={'The name field must not be empty and must contain from 2 to 50 characters.'}
-                               required
-                        />
-                        <input type='text'
-                               placeholder='E-mail'
-                               name='fromEmail'
-                               onChange={onChangeFromEmail}
-                               pattern={'^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$'}
-                               title={'The email address does not match the format.'}
-                        />
-                        <textarea placeholder='Your message' name='message' onChange={onChangeMessage} required/>
-                        <input value={'Send Message'} type={'submit'}/>
-                    </form>
-                </Fade>
-                <Popup open={successfulSending} closeOnDocumentClick onClose={closeModal}>
-                    <div className={style.popup}>
-                        <span>The message was sent successfully!</span>
-                    </div>
-                </Popup>
+const Contacts = ({ handleSubmit, sendEmail, register, successfulSending, closeModal, errorMessage, errors }) => {
+  return (
+    <div id='contacts' className={style.contactsBlock}>
+      <div className={`${styleComponent.container} ${style.contactsContainer}`}>
+        <Fade>
+          <Title titleH2={'GET IN TOUCH'} />
+          <form className={style.form} name='contacts' onSubmit={handleSubmit(sendEmail)}>
+            <input
+              {...register('fromName', {
+                required: true,
+                pattern: {
+                  value: new RegExp('^[A-Za-zА-яа-я0-9]{2,50}$'),
+                  message: 'The name field must not be empty and must contain from 2 to 50 characters.',
+                },
+              })}
+              type='text'
+              placeholder='Name'
+            />
+            <input
+              {...register('fromEmail', {
+                required: true,
+                pattern: {
+                  value: new RegExp('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$'),
+                  message: 'The email address does not match the format.',
+                },
+              })}
+              type='text'
+              placeholder='E-mail'
+            />
+            <textarea {...register('message', { required: true })} placeholder='Your message' />
+            <input value={'Send Message'} type={'submit'} />
+          </form>
+        </Fade>
+        {errors.fromName && <span className={style.contactsContainer__error}>{errors.fromName.message}</span>}
+        {errors.fromEmail && <span className={style.contactsContainer__error}>{errors.fromEmail.message}</span>}
+        {successfulSending && (
+          <Popup open={successfulSending} closeOnDocumentClick onClose={closeModal}>
+            <div className={style.popup}>{successfulSending && <span>The message was sent successfully!</span>}</div>
+          </Popup>
+        )}
+        {errorMessage && (
+          <Popup open={errorMessage} closeOnDocumentClick onClose={closeModal}>
+            <div className={style.popup}>
+              {errorMessage && <span>{`Error has occurred! Message: ${errorMessage}`}</span>}
             </div>
-        </div>
-    );
+          </Popup>
+        )}
+      </div>
+    </div>
+  );
 };
 
 export default Contacts;
