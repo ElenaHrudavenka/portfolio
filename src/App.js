@@ -6,6 +6,7 @@ import Projects from './projects/Projects';
 import Freelance from './Freelance/Freelance';
 import Contacts from './Contacts/Contacts';
 import Footer from './Footer/Footer';
+import ContactsContainer from './Contacts/ContactsContainer';
 
 function App() {
   const skills = [
@@ -81,7 +82,7 @@ function App() {
       <Skills skills={skills} />
       <Projects projects={projects} />
       {/*<Freelance />*/}
-      <Contacts />
+      <ContactsContainer />
       <Footer />
     </div>
   );

@@ -13,6 +13,10 @@
     @media screen and (max-width: 350px) {
       width: 100%;
     }
+    &__error {
+      color: #f68338;
+      text-align: center;
+    }
     .form {
       display: flex;
       flex-direction: column;
@@ -70,7 +74,6 @@
       }
     }
   }
-
 }
 .popup {
   @include text($fontFamily, 1.2em);
@@ -84,4 +87,7 @@
   background-color: $bgColor;
   color: $textColor;
   opacity: 0.9;
+  span {
+    text-align: center;
+  }
 }
