@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.bd0ca60e.css",
-    "main.js": "/portfolio/static/js/main.631b1f26.js",
+    "main.js": "/portfolio/static/js/main.37cc2070.js",
     "static/media/education.jpg": "/portfolio/static/media/education.a4ab342680bca84b825f.jpg",
     "static/media/todo.jpg": "/portfolio/static/media/todo.e58fa243e4ee7053b99f.jpg",
     "static/media/AlenaHrudavenkaCV.pdf": "/portfolio/static/media/AlenaHrudavenkaCV.a29c86ec1fe63f630257.pdf",
@@ -19,10 +19,10 @@
     "static/media/telegram_logo.svg": "/portfolio/static/media/telegram_logo.a31e429df68190475e33d13f04f73477.svg",
     "index.html": "/portfolio/index.html",
     "main.bd0ca60e.css.map": "/portfolio/static/css/main.bd0ca60e.css.map",
-    "main.631b1f26.js.map": "/portfolio/static/js/main.631b1f26.js.map"
+    "main.37cc2070.js.map": "/portfolio/static/js/main.37cc2070.js.map"
   },
   "entrypoints": [
     "static/css/main.bd0ca60e.css",
-    "static/js/main.631b1f26.js"
+    "static/js/main.37cc2070.js"
   ]
 }
