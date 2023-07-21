@@ -5,7 +5,8 @@ import s from './CV.module.scss'
 const CV = () => {
     return (
         <div className={s.block}>
-            <embed src={path_pdf} type='application/pdf' className={s.cv}/>
+            {/*<embed src={path_pdf} type='application/pdf' className={s.cv}/>*/}
+            <iframe src={path_pdf} className={s.cv}/>
         </div>
     );
 };
