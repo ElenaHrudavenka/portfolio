@@ -1,4 +1,5 @@
-import React from 'react';
+import React, {useState} from 'react';
+import {useNavigate} from 'react-router-dom'
 import style from './Footer.module.scss';
 import styleComponent from '../common/styles/Container.module.scss';
 import Title from '../common/components/Title/Title';
@@ -8,8 +9,13 @@ import vk from '../assets/image/linksLogo/vk_logo.svg';
 import linkedin from '../assets/image/linksLogo/linkedin_logo.svg';
 import github from '../assets/image/linksLogo/github_logo.svg';
 import Fade from 'react-reveal/Fade';
+import {PATH} from "../Routing/Routing";
 
 const Footer = () => {
+  const navigate = useNavigate();
+  const openCV = () => {
+    navigate(PATH.CV)
+  }
   return (
     <div className={style.footerBox}>
       <div className={`${styleComponent.container} ${style.footerContainer}`}>
@@ -36,7 +42,7 @@ const Footer = () => {
               <img src={github} alt='GitHub' />
             </a>
           </div>
-          <span className={style.span}>Link to my CV</span>
+          <span className={style.span} onClick={openCV}>Link to my CV</span>
         </Fade>
       </div>
     </div>
