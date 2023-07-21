@@ -21,7 +21,6 @@ export const ApiSend = {
         }
       })
       .catch((error) => {
-        console.log(JSON.stringify(error));
         if (error.status >= 500) {
           dispatch({ type: 'ERROR', errorMessage: 'Server error' });
         }

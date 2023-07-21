@@ -24,7 +24,6 @@ const ContactsContainer = () => {
     dispatch({ type: 'ERROR', errorMessage: '' });
     !errorMessage && reset();
   };
-  console.log(errors);
   return (
     <Contacts
       successfulSending={successfulSending}
