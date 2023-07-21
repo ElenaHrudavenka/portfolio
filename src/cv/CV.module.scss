@@ -1,0 +1,10 @@
+@import "src/common/styles/sass/variables";
+.block {
+  background-color: $bgSecondColor;
+  width: 100vw;
+  height: 100vh;
+  .cv {
+    min-height: 100%;
+    min-width: 100%;
+  }
+}
