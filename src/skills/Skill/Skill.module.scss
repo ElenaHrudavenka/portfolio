@@ -20,6 +20,7 @@
     position: relative;
     @include flex(column, center, center, nowrap);
     margin-top: 15px;
+    margin-bottom: 10px;
     height: 60px;
     width: 60px;
     background-color: $textColor;

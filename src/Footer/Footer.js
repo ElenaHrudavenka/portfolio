@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {useNavigate} from 'react-router-dom'
 import style from './Footer.module.scss';
 import styleComponent from '../common/styles/Container.module.scss';
@@ -13,8 +13,8 @@ import {PATH} from "../Routing/Routing";
 
 const Footer = () => {
   const navigate = useNavigate();
-  const openCV = () => {
-    navigate(PATH.CV)
+  const openCV = (region) => {
+    region==='BY' ? navigate(PATH.CV_BY) : navigate(PATH.CV_PL);
   }
   return (
     <div className={style.footerBox}>
@@ -42,7 +42,11 @@ const Footer = () => {
               <img src={github} alt='GitHub' />
             </a>
           </div>
-          <span className={style.span} onClick={openCV}>Link to my CV</span>
+          <div className={style.cv}>
+          <span className={style.span}>Link to my CV:</span>
+          <span className={style.span} onClick={()=>openCV('BY')}>BY</span>
+          <span className={style.span} onClick={()=>openCV('PL')}>PL</span>
+          </div>
         </Fade>
       </div>
     </div>

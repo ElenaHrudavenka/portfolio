@@ -48,11 +48,19 @@
       }
     }
 
-    .span {
-      display: block;
+    .cv {
       color: $textColor;
-      font-size: 18px;
-      letter-spacing: 2px;
+      display: flex;
+      justify-content: space-around;
+      width: 200px;
+      .span {
+        display: block;
+        font-size: 18px;
+        letter-spacing: 2px;
+        &:hover {
+          color: $primaryColor;
+        }
+      }
     }
   }
 }
