@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.f4e6879a.css",
-    "main.js": "/portfolio/static/js/main.cecc079d.js",
-    "static/media/education.jpg": "/portfolio/static/media/education.a4ab342680bca84b825f.jpg",
-    "static/media/todo.jpg": "/portfolio/static/media/todo.e58fa243e4ee7053b99f.jpg",
-    "static/media/AlenaHrudavenkaCVby.pdf": "/portfolio/static/media/AlenaHrudavenkaCVby.3fdc71cf308701332882.pdf",
-    "static/media/AlenaHrudavenkaCV.pdf": "/portfolio/static/media/AlenaHrudavenkaCV.a29c86ec1fe63f630257.pdf",
-    "static/media/portfolioPhoto.jpg": "/portfolio/static/media/portfolioPhoto.2b3153d3e881ee3fd7f3.jpg",
+    "main.css": "/portfolio/static/css/main.a78180b9.css",
+    "main.js": "/portfolio/static/js/main.a513f673.js",
+    "static/media/AlenaHrudavenkaCVby.pdf": "/portfolio/static/media/AlenaHrudavenkaCVby.87fb50cf46689a5e621b.pdf",
+    "static/media/AlenaHrudavenkaCV.pdf": "/portfolio/static/media/AlenaHrudavenkaCV.a9ad5f3965a2eb5bd744.pdf",
+    "static/media/portfolioPhoto.jpg": "/portfolio/static/media/portfolioPhoto.e3b51ae3048fa9128fc3.jpg",
+    "static/media/education.jpg": "/portfolio/static/media/education.1f5ac1c36c1de2bff275.jpg",
+    "static/media/todo.jpg": "/portfolio/static/media/todo.26d7fd339c9ea91f65a6.jpg",
     "static/media/codewars_logo.svg": "/portfolio/static/media/codewars_logo.29b2504cf8216a34d469d1798f64de02.svg",
     "static/media/react_logo.svg": "/portfolio/static/media/react_logo.7b98cd0ff882612329323651de935991.svg",
     "static/media/redux_logo.svg": "/portfolio/static/media/redux_logo.aef47b33917841f3dc8a87c8c7cfab9c.svg",
@@ -19,11 +19,11 @@
     "static/media/html_logo.svg": "/portfolio/static/media/html_logo.be01e3ff626e2df80a87d6b30fa56909.svg",
     "static/media/telegram_logo.svg": "/portfolio/static/media/telegram_logo.a31e429df68190475e33d13f04f73477.svg",
     "index.html": "/portfolio/index.html",
-    "main.f4e6879a.css.map": "/portfolio/static/css/main.f4e6879a.css.map",
-    "main.cecc079d.js.map": "/portfolio/static/js/main.cecc079d.js.map"
+    "main.a78180b9.css.map": "/portfolio/static/css/main.a78180b9.css.map",
+    "main.a513f673.js.map": "/portfolio/static/js/main.a513f673.js.map"
   },
   "entrypoints": [
-    "static/css/main.f4e6879a.css",
-    "static/js/main.cecc079d.js"
+    "static/css/main.a78180b9.css",
+    "static/js/main.a513f673.js"
   ]
 }
