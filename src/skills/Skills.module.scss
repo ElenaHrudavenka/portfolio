@@ -4,22 +4,17 @@
   min-height: 100vh;
   padding-top: $headerHeight;
   background-color: $bgSecondColor;
-  padding-bottom: 30px;
   .skillsContainer {
-    /* border: 1px solid $secondaryColor;*/
     align-items: center;
     flex-direction: column;
     justify-content: flex-start;
-    /*padding: 25px 0;*/
   }
 
   .skills {
-    /*  background-color: $bgColor;*/
     width: 100%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    /*    align-items: flex-start; -- размер будет выравнивать по содержимому блока skill*/
   }
 
   @media screen and (max-width: 249px) {
