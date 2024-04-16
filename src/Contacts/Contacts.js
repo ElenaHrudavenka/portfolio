@@ -34,7 +34,7 @@ const Contacts = ({ handleSubmit, sendEmail, register, successfulSending, closeM
               type='text'
               placeholder='E-mail'
             />
-            <textarea {...register('message', { required: true })} placeholder='Your message' />
+            <textarea {...register('message', { required: true })} placeholder='Your message'/>
             <input value={'Send Message'} type={'submit'} />
           </form>
         </Fade>

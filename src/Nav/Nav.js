@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 
 const Nav = () => {
   return (
-    <div className={style.nav}>
+    <nav className={style.nav}>
       {/*<a href="">Home</a>*/}
       <Link activeClass={style.active} to='home' spy={true} smooth={true} offset={0} duration={500} delay={300}>
         Home
@@ -21,7 +21,7 @@ const Nav = () => {
       <Link activeClass={style.active} to='contacts' spy={true} smooth={true} offset={0} duration={500} delay={300}>
         Contacts
       </Link>
-    </div>
+    </nav>
   );
 };
 
