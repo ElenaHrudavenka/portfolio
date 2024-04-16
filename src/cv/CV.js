@@ -1,4 +1,4 @@
-import path_pdf_by from '../assets/image/Alena_Hrudavenka_CV_ru`.pdf'
+import path_pdf_by from '../assets/image/Alena_Hrudavenka_CV_ru.pdf'
 import path_pdf_pl from '../assets/image/Alena_Hrudavenka_CV.pdf'
 
 import React from 'react';
