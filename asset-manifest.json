@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.58b4b9f2.css",
-    "main.js": "/portfolio/static/js/main.5147489b.js",
-    "static/media/AlenaHrudavenkaCV_ru.pdf": "/portfolio/static/media/AlenaHrudavenkaCV_ru.de359ffbf45f87b8d190.pdf",
-    "static/media/AlenaHrudavenkaCV.pdf": "/portfolio/static/media/AlenaHrudavenkaCV.a9ad5f3965a2eb5bd744.pdf",
+    "main.css": "/portfolio/static/css/main.7e920215.css",
+    "main.js": "/portfolio/static/js/main.68f8d9b5.js",
+    "static/media/Alena_Hrudavenka_CV_ru.pdf": "/portfolio/static/media/Alena_Hrudavenka_CV_ru.b70c12f16e556fd55271.pdf",
+    "static/media/Alena_Hrudavenka_CV.pdf": "/portfolio/static/media/Alena_Hrudavenka_CV.3e309213e5c5b8a51f4d.pdf",
     "static/media/portfolioPhoto.jpg": "/portfolio/static/media/portfolioPhoto.e3b51ae3048fa9128fc3.jpg",
     "static/media/education.jpg": "/portfolio/static/media/education.1f5ac1c36c1de2bff275.jpg",
     "static/media/todo.jpg": "/portfolio/static/media/todo.26d7fd339c9ea91f65a6.jpg",
@@ -19,11 +19,11 @@
     "static/media/html_logo.svg": "/portfolio/static/media/html_logo.be01e3ff626e2df80a87d6b30fa56909.svg",
     "static/media/telegram_logo.svg": "/portfolio/static/media/telegram_logo.a31e429df68190475e33d13f04f73477.svg",
     "index.html": "/portfolio/index.html",
-    "main.58b4b9f2.css.map": "/portfolio/static/css/main.58b4b9f2.css.map",
-    "main.5147489b.js.map": "/portfolio/static/js/main.5147489b.js.map"
+    "main.7e920215.css.map": "/portfolio/static/css/main.7e920215.css.map",
+    "main.68f8d9b5.js.map": "/portfolio/static/js/main.68f8d9b5.js.map"
   },
   "entrypoints": [
-    "static/css/main.58b4b9f2.css",
-    "static/js/main.5147489b.js"
+    "static/css/main.7e920215.css",
+    "static/js/main.68f8d9b5.js"
   ]
 }
