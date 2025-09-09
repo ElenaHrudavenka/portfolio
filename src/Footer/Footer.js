@@ -13,8 +13,8 @@ import {PATH} from "../Routing/Routing";
 
 const Footer = () => {
   const navigate = useNavigate();
-  const openCV = (region) => {
-    region==='BY' ? navigate(PATH.CV_BY) : navigate(PATH.CV_PL);
+  const openCV = () => {
+    navigate(PATH.CV_PL);
   }
   return (
     <div className={style.footerBox}>
@@ -43,9 +43,7 @@ const Footer = () => {
             </a>
           </div>
           <div className={style.cv}>
-          <span className={style.span}>Link to my CV:</span>
-          <span className={style.span} onClick={()=>openCV('BY')}>BY</span>
-          <span className={style.span} onClick={()=>openCV('PL')}>PL</span>
+          <span className={style.span} onClick={()=>openCV()}>Link to my CV</span>
           </div>
         </Fade>
       </div>

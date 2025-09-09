@@ -60,7 +60,8 @@ const projects = [
         image: '',
         projectTitle: 'Todolist',
         description: TodolistDescription,
-        link: 'https://elenahrudavenka.github.io/todolist/',
+        /*link: 'https://elenahrudavenka.github.io/todolist/',*/
+        link: 'https://github.com/ElenaHrudavenka/todolist.git',
         gitHub: 'https://github.com/ElenaHrudavenka/todolist.git',
     },
     {
@@ -68,8 +69,9 @@ const projects = [
         image: '',
         projectTitle: 'Training Cards',
         description: TrainingCardsDescription,
-        link: 'https://pv18.github.io/project-cards-front',
-        gitHub: 'https://github.com/pv18/project-cards-front.git.',
+        /*link: 'https://pv18.github.io/project-cards-front',*/
+        link: 'https://github.com/pv18/project-cards-front.git',
+        gitHub: 'https://github.com/pv18/project-cards-front.git',
     },
 ];
 const Layout = () => {
