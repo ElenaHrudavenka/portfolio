@@ -1,13 +1,12 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.7e920215.css",
-    "main.js": "/portfolio/static/js/main.b261c1c2.js",
-    "static/media/AlenaHrudavenka_CV_ru.pdf": "/portfolio/static/media/AlenaHrudavenka_CV_ru.d76afb65ee8885255f81.pdf",
-    "static/media/AlenaHrudavenka_CV.pdf": "/portfolio/static/media/AlenaHrudavenka_CV.553e078c5dff9ece2783.pdf",
-    "static/media/portfolioPhoto.jpg": "/portfolio/static/media/portfolioPhoto.e3b51ae3048fa9128fc3.jpg",
+    "main.css": "/portfolio/static/css/main.f7a60177.css",
+    "main.js": "/portfolio/static/js/main.d9f39c17.js",
+    "static/media/portfolioPhoto.jpg": "/portfolio/static/media/portfolioPhoto.0c565a6022ab09cf4d0c.jpg",
+    "static/media/Alena_Hrudavenka_CV.pdf": "/portfolio/static/media/Alena_Hrudavenka_CV.1d90729ed2456480b9b6.pdf",
     "static/media/education.jpg": "/portfolio/static/media/education.1f5ac1c36c1de2bff275.jpg",
     "static/media/todo.jpg": "/portfolio/static/media/todo.26d7fd339c9ea91f65a6.jpg",
-    "static/media/codewars_logo.svg": "/portfolio/static/media/codewars_logo.29b2504cf8216a34d469d1798f64de02.svg",
+    "static/media/codewars_logo.svg": "/portfolio/static/media/codewars_logo.58a0edddaa8123a33b8f1ba0d4df835d.svg",
     "static/media/react_logo.svg": "/portfolio/static/media/react_logo.7b98cd0ff882612329323651de935991.svg",
     "static/media/redux_logo.svg": "/portfolio/static/media/redux_logo.aef47b33917841f3dc8a87c8c7cfab9c.svg",
     "static/media/js_logo.svg": "/portfolio/static/media/js_logo.b18c3b62c1f8e2e7179cf0a1f906512b.svg",
@@ -15,15 +14,15 @@
     "static/media/css_logo.svg": "/portfolio/static/media/css_logo.2387e2f5e8f022b6a8cbcc2a77ba1ce2.svg",
     "static/media/vk_logo.svg": "/portfolio/static/media/vk_logo.2aea788517245db73357a0cbf5c1be2e.svg",
     "static/media/ts_logo.svg": "/portfolio/static/media/ts_logo.5978c0feb4ca6b58e92cce788e809737.svg",
-    "static/media/github_logo.svg": "/portfolio/static/media/github_logo.3e80bcebaca36d96314f091ccaf5ee64.svg",
-    "static/media/html_logo.svg": "/portfolio/static/media/html_logo.be01e3ff626e2df80a87d6b30fa56909.svg",
-    "static/media/telegram_logo.svg": "/portfolio/static/media/telegram_logo.a31e429df68190475e33d13f04f73477.svg",
+    "static/media/github_logo.svg": "/portfolio/static/media/github_logo.676b31bbcb4c393e5063c700678e1f53.svg",
+    "static/media/html_logo.svg": "/portfolio/static/media/html_logo.c28f2838f4a6158bfebb452cff52086b.svg",
+    "static/media/telegram_logo.svg": "/portfolio/static/media/telegram_logo.a9ff0303f94cea297a589be32b87d775.svg",
     "index.html": "/portfolio/index.html",
-    "main.7e920215.css.map": "/portfolio/static/css/main.7e920215.css.map",
-    "main.b261c1c2.js.map": "/portfolio/static/js/main.b261c1c2.js.map"
+    "main.f7a60177.css.map": "/portfolio/static/css/main.f7a60177.css.map",
+    "main.d9f39c17.js.map": "/portfolio/static/js/main.d9f39c17.js.map"
   },
   "entrypoints": [
-    "static/css/main.7e920215.css",
-    "static/js/main.b261c1c2.js"
+    "static/css/main.f7a60177.css",
+    "static/js/main.d9f39c17.js"
   ]
 }
