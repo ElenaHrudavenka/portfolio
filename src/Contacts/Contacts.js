@@ -1,15 +1,14 @@
-import React from 'react';
 import style from './Contacts.module.scss';
 import styleComponent from '../common/styles/Container.module.scss';
 import Title from '../common/components/Title/Title';
-import Fade from 'react-reveal/Fade';
+import { Fade } from 'react-awesome-reveal';
 import Popup from 'reactjs-popup';
 
 const Contacts = ({ handleSubmit, sendEmail, register, successfulSending, closeModal, errorMessage, errors }) => {
   return (
     <div id='contacts' className={style.contactsBlock}>
       <div className={`${styleComponent.container} ${style.contactsContainer}`}>
-        <Fade>
+        <Fade direction="up" triggerOnce>
           <Title titleH2={'GET IN TOUCH'} />
           <form className={style.form} name='contacts' onSubmit={handleSubmit(sendEmail)}>
             <input

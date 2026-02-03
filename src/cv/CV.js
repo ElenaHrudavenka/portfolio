@@ -1,12 +1,14 @@
-import path_pdf_pl from '../assets/image/Alena_Hrudavenka_CV.pdf'
+import path_pdf_pl from '../assets/image/HRUDAVENKA_ALENA_CV.pdf'
 
-import React from 'react';
-import s from './CV.module.scss'
+import style from './CV.module.scss'
 
 const CV = () => {
     return (
-        <div className={s.block}>
-            <iframe src={path_pdf_pl} className={s.cv}/>
+        <div className={style.block}>
+            <iframe
+                title='My CV document'
+                src={path_pdf_pl}
+                className={style.cv} />
         </div>
     );
 };

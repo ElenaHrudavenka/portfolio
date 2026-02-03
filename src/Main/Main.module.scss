@@ -1,5 +1,6 @@
 @import '../common/styles/sass/variables';
 @import '../common/styles/sass/mixins';
+
 .mainBlock {
   min-height: 100vh;
   padding-top: $headerHeight;
@@ -7,28 +8,36 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-/*      .particles {
-        position: absolute;
-        top:0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-    }*/
+  position: relative;
+  overflow: hidden;
+
+  .particles {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+  }
+
   .mainContainer {
+    height: 80%;
     @include container();
     @include flex(row, center, space-evenly, wrap);
+
     @media screen and (max-width: 915px) {
       justify-content: center;
     }
+
     .salutation {
       padding-left: 20px;
       width: 400px;
       font-family: 'Oswald', sans-serif;
+
       @media screen and (max-width: 915px) {
         width: 250px;
         padding-left: 2px;
         text-align: center;
       }
+
       & h1 {
         color: white;
         margin-bottom: 20px;
@@ -58,9 +67,11 @@
         letter-spacing: 5px;
         margin-bottom: unset;
         position: relative;
+
         @media screen and (max-width: 915px) {
           font-size: 16px;
         }
+
         &::after {
           content: '';
           position: absolute;
@@ -68,6 +79,7 @@
           width: 70%;
           background: $primaryColor;
           bottom: 0;
+
           @media screen and (max-width: 915px) {
             height: 0;
             font-size: 17px;
@@ -75,32 +87,40 @@
         }
       }
     }
+
     .photo {
       position: relative;
       z-index: 1;
+
       @media screen and (max-width: 1143px) {
         margin-top: 50px;
       }
+
       .image {
         width: 340px;
         height: 480px;
         background-size: cover;
         background-image: url('./../assets/image/portfolioPhoto.jpg');
         background-position: 80% 0;
+        position: relative;
+        box-sizing: border-box;
+
         @media screen and (max-width: 600px) {
           width: 240px;
           height: 350px;
           transition: 0.5s;
         }
+
         &::before {
           content: '';
           position: absolute;
-          height: 110%;
-          width: 105%;
+          height: calc(100% + 30px);
+          width: calc(100% + 30px);
           border: 5px solid $primaryColor;
           left: 15px;
           top: -15px;
           z-index: -1;
+
           @media screen and (max-width: 760px) {
             border: 5px solid $primaryColor;
             height: 99%;
