@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react';
+import { useReducer } from 'react';
 import Contacts from './Contacts';
 import { init, initialState, reducer } from '../api/reducer';
 import { useForm } from 'react-hook-form';

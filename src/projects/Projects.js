@@ -1,14 +1,14 @@
-import React from 'react';
 import styleContainer from '../common/styles/Container.module.scss';
 import style from './Projects.module.scss';
 import Project from './Project/Project';
 import Title from '../common/components/Title/Title';
 import socialNetworkImage from './../assets/image/education.jpg';
 import todoImage from './../assets/image/todo.jpg';
+import projects from '../projects/project.constants';
 
-const Projects = (props) => {
+const Projects = () => {
   let url = '';
-  const projectsList = props.projects.map((el, index) => {
+  const projectsList = projects.map((el, index) => {
     if (el.projectTitle === 'Todolist') {
       url = `url(${todoImage})`;
     }

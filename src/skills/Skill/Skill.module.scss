@@ -1,41 +1,45 @@
 @import '../../common/styles/sass/variables';
 @import '../../common/styles/sass/mixins';
+
 .skill {
   width: 250px;
+  height: 300px;
   background-color: $bgColor;
   @include flex(column, center, start, nowrap);
-  border: 1px solid $secondaryColor;
+  border: 1px solid $primaryColor;
   opacity: 0.9;
   font-family: 'Rambla', sans-serif;
-  margin: 5px;
+  margin: 10px;
+
   & h3 {
+    margin: 5px;
     font-family: 'Oswald', sans-serif;
     color: $primaryColor;
     letter-spacing: 3px;
-    &:hover {
-      /*text-transform: uppercase;*/
-    }
   }
+
   .icon {
     position: relative;
     @include flex(column, center, center, nowrap);
-    margin-top: 15px;
-    margin-bottom: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     height: 60px;
     width: 60px;
     background-color: $textColor;
     opacity: 0.8;
     transform: rotate(45deg);
+
     & div {
       transform: rotate(-45deg);
       background-size: cover;
     }
   }
+
   .description {
     padding: 0 5px;
     color: $textColor;
     opacity: 0.9;
     text-align: center;
-    margin-bottom: 10px;
+    margin: 15px 10px;
   }
 }

@@ -1,26 +1,14 @@
-import React, {useEffect, useState} from 'react';
 import style from './Main.module.scss';
-import Particle from '../common/components/Particle/Particle';
-import Fade from 'react-reveal/Fade';
+import { Fade } from 'react-awesome-reveal';
 import ReactTypingEffect from 'react-typing-effect';
+import Particle from '../common/components/Particle/Particle';
 
 const Main = () => {
-/*  const [isModalDisplayed, setModalDisplayed] = useState(false);
-  const [ModalComponent, setModalComponent] = useState(null);
-
-  useEffect(async ()=>{
-    const loadResult = await import('../common/components/Particle/Particle')
-    setModalComponent(() => {
-      setModalDisplayed(true);
-      return loadResult.default
-    })
-  },[])*/
   return (
     <div id='home' className={style.mainBlock}>
-     {/* {isModalDisplayed && ModalComponent ? <Particle /> : null};*/}
-      <Particle />
+        <Particle />
       <div className={style.mainContainer}>
-        <Fade top>
+        <Fade direction='down' triggerOnce>
           <div className={style.salutation}>
             <h2>I'am</h2>
             <h1>Alena Hrudavenka</h1>

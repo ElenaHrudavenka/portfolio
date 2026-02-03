@@ -4,9 +4,6 @@ import { loadFull } from 'tsparticles';
 
 const Particle = () => {
   const particlesInit = useCallback(async (engine) => {
-    // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
     await loadFull(engine);
   }, []);
 
@@ -15,15 +12,9 @@ const Particle = () => {
   return (
     <Particles
       id='tsparticles'
-      /*url="http://foo.bar/particles.json" */
       init={particlesInit}
       loaded={particlesLoaded}
       options={{
-        /*                  background: {
-                      color: {
-                          value: "#F68338",
-                      },
-                  },*/
         fpsLimit: 120,
         interactivity: {
           events: {
@@ -50,7 +41,6 @@ const Particle = () => {
         particles: {
           color: {
             value: '#F68338',
-            /*value: "#F68338",*/
           },
           links: {
             color: '#ffffff',

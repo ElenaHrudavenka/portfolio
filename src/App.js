@@ -1,5 +1,5 @@
-import Routing from "./Routing/Routing";
-import {HashRouter} from "react-router-dom";
+import Routing from './Routing/Routing';
+import {HashRouter} from 'react-router-dom';
 
 function App() {
 

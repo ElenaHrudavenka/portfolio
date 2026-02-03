@@ -1,7 +1,6 @@
-import React from 'react';
-import {Route, Routes} from "react-router-dom";
-import Layout from "../layout/Layout";
-import CV from "../cv/CV";
+import {Route, Routes} from 'react-router-dom';
+import Layout from '../layout/Layout';
+import CV from '../cv/CV';
 
 export const PATH = {
     PORTFOLIO: '/portfolio',
